@@ -9,7 +9,11 @@
 </head>
 <body>
 <h3>HOla</h3>
+<div id="app">
 
+    {{@message}}
+
+</div>
 <script src="js/app.js"></script>
 
 </body>
