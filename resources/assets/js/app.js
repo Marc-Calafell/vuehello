@@ -17,35 +17,34 @@ Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
     el: '#app',
+
     data: {
         message:'Hello',
         seen:true,
-        todos: {
+        todos: [
             {
-                name:"asf",
-                done:true,
-                priority:1
+                name: 'Learn Javascript',
+                done: true,
+                priority: 3
             },
             {
-                name:"agsf",
-                    done:true,
-                priority:1
+                name: 'Estudiar php',
+                done: false,
+                priority: 4
             },
             {
-                name:"aghsf",
-                    done:true,
-                priority:1
+                name: 'comprar tabaco',
+                done: true,
+                priority: 8
             }
-
-        }
+        ]
     },
-    methods:{
+
+    methods: {
         reverseMessage: function () {
-            this.message=this.reverse();
+            this.message = this.message.split('').reverse().join('');
+
         }
-
     }
-
-
 
 });
