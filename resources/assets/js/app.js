@@ -19,7 +19,25 @@ const app = new Vue({
     el: '#app',
     data: {
         message:'Hello',
-        seen:true
+        seen:true,
+        todos: {
+            {
+                name:"asf",
+                done:true,
+                priority:1
+            },
+            {
+                name:"agsf",
+                    done:true,
+                priority:1
+            },
+            {
+                name:"aghsf",
+                    done:true,
+                priority:1
+            }
+
+        }
     },
     methods:{
         reverseMessage: function () {
