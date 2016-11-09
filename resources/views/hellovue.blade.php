@@ -11,9 +11,10 @@
 <h3>HOla</h3>
 <div id="app">
 
-    <p>{{@message}}</p>
+    <p v-show="seen">@{{message}}</p>
 
-    <input type="text">
+    <input type="text"  v-model="message" >
+    <button v-click="reverseMessage">reverse</button>
 </div>
 <script src="js/app.js"></script>
 

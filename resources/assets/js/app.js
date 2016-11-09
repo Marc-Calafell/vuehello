@@ -18,7 +18,14 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: '#app',
     data: {
-        message:'Hello'
+        message:'Hello',
+        seen:true
+    },
+    methods:{
+        reverseMessage: function () {
+            this.message=this.reverse();
+        }
+
     }
 
 
