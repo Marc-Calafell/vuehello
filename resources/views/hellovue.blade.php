@@ -13,7 +13,7 @@
 
     <p>{{@message}}</p>
 
-    <input type="text" v-model="message" >
+    <input type="text">
 </div>
 <script src="js/app.js"></script>
 
