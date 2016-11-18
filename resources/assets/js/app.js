@@ -32,6 +32,8 @@ const app = new Vue({
                 done: false,
                 priority: 4
             },
+
+
             {
                 name: 'comprar tabaco',
                 done: true,
